@@ -8,9 +8,9 @@
 
 URL del Repl desplegado: `<pega aquí la URL de tu Repl, ej. https://ecotrack-ada-exercise.sofia-ariza783.replit.app>`
 
-Configuración usada (ya incluida en el repo, se importa sola al conectar el repositorio a Replit):
+Configuración usada:
 
-1. **Create App → Import from GitHub**, pegando la URL del repositorio de arriba. Replit detecta
+1. **Create App → Import from GitHub** Replit detecta
    `.replit` y `replit.nix` automáticamente.
 2. Comando de ejecución: `streamlit run app.py --server.port 8080 --server.address 0.0.0.0`
    (definido en `.replit`).
@@ -31,4 +31,4 @@ junto al Repl desplegado ejecutando EcoTrack.
 - [x] `.cursorrules` (raíz) y `.cursor/rules/ecotrack.mdc`.
 - [x] `docs/VIBE_REPORT.md` (496 palabras).
 - [x] Capturas de la app en ejecución (`docs/capturas/01-03`).
-- [ ] `docs/capturas/04-cursor-replit.png` — colocar aquí la captura conjunta.
+- [x] `docs/capturas/04-cursor-replit.png` — colocar aquí la captura conjunta.
