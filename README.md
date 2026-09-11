@@ -35,7 +35,8 @@ python -m pytest tests/ -q
 | `.replit` / `replit.nix` / `.streamlit/config.toml` | Configuración de ejecución y deploy en Replit. |
 | `docs/VIBE_REPORT.md` | Reflexión sobre el flujo de Vibe Coding (entregable). |
 | `docs/PROMPTS.md` | Bitácora de los prompts usados para construir el MVP. |
-| `docs/ENTREGA.md` | Pasos manuales pendientes (GitHub, Replit, capturas de Cursor). |
+| `docs/ENTREGA.md` | Registro de despliegue: repositorio, Repl y capturas. |
+| `docs/PARA_EL_REVISOR.md` | Guía de lectura del repo para quien evalúe el ejercicio. |
 | `docs/capturas/` | Capturas reales de la app en ejecución. |
 
 ## Entregables del ejercicio
@@ -43,4 +44,4 @@ python -m pytest tests/ -q
 1. **URL del repositorio** — https://github.com/Sofia-ariza-783/EcoTrack-ADA-Exercise
 2. **`.cursorrules`** — en la raíz de este repo.
 3. **Vibe Report** — `docs/VIBE_REPORT.md`.
-4. **Capturas** — `docs/capturas/` (app real) + `docs/ENTREGA.md` (guía para la de Cursor+Replit).
+4. **Capturas** — `docs/capturas/` (app real y captura conjunta Cursor + Replit).
