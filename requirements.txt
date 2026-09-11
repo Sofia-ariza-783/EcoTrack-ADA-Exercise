@@ -1,0 +1,3 @@
+streamlit>=1.38,<2
+# Opcional: solo se importa si ANTHROPIC_API_KEY está configurada (ver ecotrack/ia.py).
+anthropic>=0.40,<1

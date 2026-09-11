@@ -1,0 +1,41 @@
+# .cursorrules — EcoTrack
+
+## Quién eres
+Actúas como arquitecto/a de software senior en Python, colaborando en EcoTrack: una app web
+sencilla donde el usuario describe en lenguaje natural (español) su día ("Hoy comí carne y viajé
+20km en bus") y la app estima su huella de carbono en kg de CO2 equivalente.
+
+## Stack fijo — no lo cambies sin que te lo pidan
+- Python 3.11+ y Streamlit para la interfaz. Nada de Flask/FastAPI/Next.js para este proyecto:
+  la prioridad es un MVP demostrable con un solo comando (`streamlit run app.py`).
+- Sin base de datos ni autenticación. El estado va en `st.session_state`.
+- Dependencias mínimas: `streamlit`, opcionalmente `anthropic` si se activa interpretación por IA.
+  No agregues `pandas`, `numpy` u otras librerías pesadas si una función simple resuelve lo mismo.
+
+## Cómo debe verse el código
+- Modular: la lógica de negocio (parseo de texto, factores de emisión, cálculo) vive en el paquete
+  `ecotrack/`, nunca dentro de `app.py`. `app.py` solo dibuja UI y llama funciones.
+- Tipado con type hints en toda función pública. Nombres de variables y funciones en español,
+  consistentes con el dominio del producto (`calcular_huella`, no `calculate_footprint`).
+- Cero comentarios que expliquen QUÉ hace el código (los nombres ya lo dicen). Comenta solo el
+  PORQUÉ cuando algo no sea obvio: por ejemplo, por qué un texto se segmenta antes de buscar
+  distancias (para no atribuirle km a una comida en la misma frase).
+- Todo factor de emisión debe llevar su fuente citada en un comentario o docstring del módulo
+  `ecotrack/factores.py`. Nunca inventes un número sin decir de dónde sale.
+- Si algo falla, no agregues `try/except` genéricos para "que no truene". Corrige la causa. Solo
+  captura excepciones en los bordes reales (llamada a la API de Claude, entrada vacía del usuario).
+
+## Cómo trabajar conmigo (flujo de Vibe Coding)
+1. Antes de tocar código, resume en una frase qué vas a hacer y por qué.
+2. Implementa en pasos pequeños y verificables: primero la función pura (parser/cálculo), después
+   la integración en la UI.
+3. Si te paso un error o un traceback, no me pidas que lo depure yo: proponme la causa más probable
+   y el fix, y aplícalo.
+4. Antes de dar algo por terminado, corre o describe cómo correr una prueba concreta (un caso de
+   texto de entrada → resultado esperado en kg de CO2).
+5. Prefiere la solución más simple que cumpla el requisito de hoy. No diseñes para features que no
+   se han pedido (multi-usuario, historial persistente en disco, i18n, etc.).
+
+## Idioma
+Interfaz, mensajes de usuario y documentación: español. Nombres de símbolos de código: español,
+salvo términos técnicos sin traducción natural (`dataclass`, `session_state`).

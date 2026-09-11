@@ -1,0 +1,18 @@
+---
+description: Reglas de arquitectura y estilo para el proyecto EcoTrack
+globs: ["**/*.py"]
+alwaysApply: true
+---
+
+# EcoTrack — Project Rules
+
+Este archivo es la versión en formato "Project Rules" (Cursor moderno) de las reglas raíz en
+`.cursorrules`. Cursor puede leer cualquiera de los dos formatos según la versión del IDE; se
+mantienen ambos sincronizados a propósito para que la configuración funcione sin importar la
+versión instalada.
+
+Contenido idéntico a `.cursorrules` en la raíz del repo: stack fijo (Python + Streamlit), lógica de
+negocio en `ecotrack/` separada de la UI en `app.py`, type hints obligatorios, nombres en español,
+factores de emisión siempre citados con fuente, sin dependencias pesadas, y el flujo de trabajo de
+"resumir → implementar en pasos pequeños → probar con un caso concreto → corregir a partir del error
+real, no adivinando".
