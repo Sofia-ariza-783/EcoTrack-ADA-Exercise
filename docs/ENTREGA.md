@@ -19,6 +19,9 @@ Configuración usada:
    en uso.
 4. **Deploy** (botón superior derecho) para publicar la URL pública.
 
+## Video Demo
+https://drive.google.com/file/d/10IBJs6zQ8CufImY4_QNt_Kzh-MEfkM-Q/view?usp=drive_link`
+
 ## Captura Cursor + Replit
 
 Colocar la imagen en `docs/capturas/04-cursor-replit.png`, mostrando el Composer/Chat de Cursor
@@ -31,4 +34,5 @@ junto al Repl desplegado ejecutando EcoTrack.
 - [x] `.cursorrules` (raíz) y `.cursor/rules/ecotrack.mdc`.
 - [x] `docs/VIBE_REPORT.md` (496 palabras).
 - [x] Capturas de la app en ejecución (`docs/capturas/01-03`).
-- [x] `docs/capturas/04-cursor-replit.png` — colocar aquí la captura conjunta.
+- [x] `docs/capturas/04-cursor-replit.png` 
+- [x] Video Demo (opcional)
